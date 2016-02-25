@@ -38,6 +38,9 @@ private int x;
 private static readonly myLock = new Object();
 ```
 
+## Regions
+Do not use `#region` blocks. Regions are made for hiding the code. Our code deserves not to be hidden, we are proud of it.
+
 ## Commenting conventions
 Use XML comments (eg, `///<summary>...</summary>`) for documenting methods, classes and interfaces. 
 
