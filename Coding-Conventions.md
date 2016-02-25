@@ -17,6 +17,10 @@ Every principle and every rule can be broken when there is a good reason for it 
 # Conventions
 
 ## Indent style
+
+### Tabs
+Use tabs for indentation. Do not use spaces. Recommended tab size is 4, but always format code in a way that is compatible with arbitrary tab size.
+
 ## Naming conventions
 We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx).
 
