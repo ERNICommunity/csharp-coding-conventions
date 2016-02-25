@@ -39,5 +39,11 @@ private static readonly myLock = new Object();
 ```
 
 ## Commenting conventions
+Use XML comments (eg, `///<summary>...</summary>`) for documenting methods, classes and interfaces. 
 
+Avoid block comments (i.e. `/* ... */`).
+
+Use single line comments (i.e. `// ...`) for general commenting.
+
+Do not commit dead code (i.e. code that is commented out).
  
