@@ -5,9 +5,6 @@ This document describes C# coding conventions we are using in ERNI Service Deliv
 
 This work is heavily inspired by [Steve McConnell's Code Complete](http://www.stevemcconnell.com/cc.htm), [Robert C. Martin's Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) and [C# Coding Convention from Microsoft](https://msdn.microsoft.com/en-us/library/ff926074.aspx).
 
-## Motivation
-Maintainability.
-
 ## General Principles
 
 ### Readability
