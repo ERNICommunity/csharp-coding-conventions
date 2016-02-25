@@ -20,13 +20,22 @@ Every principle and every rule can be broken when there is a good reason for it 
 ## Naming conventions
 We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx).
 
-Constants and private fields deserved to be mentioned separetely.
+Constants and private fields deserved to be mentioned separately.
 
 ### Constants
 Constant names should follow Pascal casing irrespective of access modifier.
 
 ```csharp
-private const int TheAnswer = 42;
+private const int TheUniversalAnswer = 42;
+public const double Pi = 3.14;
+```
+
+### Private  fields
+Private filed should begin with lower case. This apply for static fields as well. Private fields should not start with underscore or any other prefix.
+
+```csharp
+private int x;
+private static readonly myLock = new Object();
 ```
 
 ## Commenting conventions
