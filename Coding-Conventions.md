@@ -21,6 +21,32 @@ Every principle and every rule can be broken when there is a good reason for it 
 ### Tabs
 Use tabs for indentation. Do not use spaces. Recommended tab size is 4, but always format code in a way that is compatible with arbitrary tab size.
 
+### { Curly Braces } 
+We are using [Allman style](https://en.wikipedia.org/wiki/Indent_style#Allman_style) of bracket placement.
+
+> This style puts the brace associated with a control statement on the next line, indented to the same level as the control statement. Statements within the braces are indented to the next level.
+
+**Never omit braces after control statement.**
+
+```csharp
+if (condition)
+{ // this brace should be never omitted
+    DoSomething();
+}
+
+DoSomethingElse();
+```
+
+Notable exception is nesting multiple using statements in a row. In that case, it is recommended to write is as follows.
+
+```csharp
+using (var sr = new StringReader(str))
+using (var xtr = new XmlTextReader(sr))
+{
+    // ...
+}
+```
+
 ## Naming conventions
 We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx).
 
