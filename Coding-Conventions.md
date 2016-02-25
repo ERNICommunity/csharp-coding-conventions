@@ -46,4 +46,5 @@ Avoid block comments (i.e. `/* ... */`).
 Use single line comments (i.e. `// ...`) for general commenting.
 
 Do not commit dead code (i.e. code that is commented out).
- 
+
+Unless it is specifically required by project, do not use documentary headers stating authorship, copyright or revision.
