@@ -59,7 +59,7 @@ public const double Pi = 3.14;
 ```
 
 ### Private  fields
-Private filed should begin with lower case. This apply for static fields as well. Private fields should not start with underscore or any other prefix.
+Private field should begin with lower case. This apply for static fields as well. Private fields should not start with underscore or any other prefix.
 
 ```csharp
 private int x;
