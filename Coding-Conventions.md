@@ -48,7 +48,7 @@ using (var xtr = new XmlTextReader(sr))
 ```
 
 ## Naming conventions
-We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx). Since Microsoft Naming Guidelines are not very precise with nameing rules for constansts and private fields we mention them separately.
+We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx). Since Microsoft Naming Guidelines are not very precise with nameing rules for constansts and private fields, we mention them separately.
 
 ### Constants
 Constant names should follow Pascal casing irrespective of access modifier.
