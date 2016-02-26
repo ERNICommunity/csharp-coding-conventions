@@ -37,7 +37,7 @@ if (condition)
 DoSomethingElse();
 ```
 
-Notable exception is nesting multiple using statements in a row. In that case, it is recommended to write is as follows.
+Notable exception is nesting multiple using statements in a row. In that case, it is recommended to format code as follows:
 
 ```csharp
 using (var sr = new StringReader(str))
