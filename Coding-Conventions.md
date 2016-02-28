@@ -74,6 +74,8 @@ private int x;
 private static readonly myLock = new Object();
 ```
 
+To distinguish between local and member variables use ```this.```
+
 ## Declarations
 
 Declaration of types, type memebers (eg fields, properties, methods), parameters, and local variables can have several keywords. Follow these rules in declarations:
