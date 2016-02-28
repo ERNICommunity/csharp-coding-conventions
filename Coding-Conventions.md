@@ -66,6 +66,8 @@ private int x;
 private static readonly myLock = new Object();
 ```
 
+To distinguish between local and member variables use ```csharp this.```
+
 ## Regions
 Do not use `#region` blocks. Regions are made for hiding the code. Our code deserves not to be hidden, we are proud of it.
 
