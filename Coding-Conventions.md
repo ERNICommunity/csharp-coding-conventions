@@ -50,6 +50,11 @@ using (var xtr = new XmlTextReader(sr))
 }
 ```
 
+### Spaces
+Avoid more than one empty line at any time. For example, do not have two blank lines between members of a type.
+
+Avoid spurious free spaces. For example avoid `if (someVar == 0)...`, where the dots mark the spurious free spaces. Consider enabling "View White Space (Ctrl+E, S)" if using Visual Studio, to aid detection.
+
 ## Naming conventions
 We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx). Since Microsoft Naming Guidelines are not very precise with nameing rules for constansts and private fields, we mention them separately.
 
@@ -68,6 +73,37 @@ Private field should begin with lower case. This apply for static fields as well
 private int x;
 private static readonly myLock = new Object();
 ```
+
+## Declarations
+
+Declaration of types, type memebers (eg fields, properties, methods), parameters, and local variables can have several keywords. Follow these rules in declarations:
+
+1. Always specify the visibility, even if it's the default (i.e. `private string _foo`  not  `string _foo`).
+2. Visibility should be the first modifier (i.e. `public abstract` not `abstract public`).
+3. When used on static fields, `readonly` should come after `static` (i.e. `static readonly` not `readonly static`).
+4. Members of enums are sorted by value.
+
+Order type members in following order inside file:
+
+1. Fields
+2. Properties
+3. Events
+4. Methods
+5. Inner Types
+
+There are exceptions to this rule, if members are strongly related to each other. For example:
+- Properties and value storage fields.
+- Depencency properties and related .NET properties.
+- Events and related `protected virtual` methods.
+
+## References
+1. Use `nameof(...)` instead of `"..."` whenever possible and relevant.
+2. Use `this.` whenever possible.
+3. Use `var` keyword instead of specific type whenever possible.
+4. Use language keywords instead of BCL types (i.e. `int, string, float` instead of `Int32, String, Single`, etc) for both type references as well as method calls (i.e. `int.Parse` instead of `Int32.Parse`).
+
+## Namespaces
+Namespace imports should be specified at the top of the file, outside of `namespace` declarations and should be sorted alphabetically, but `System` namespaces must be before any other namespaces.
 
 To distinguish between local and member variables use ```csharp this.```
 
