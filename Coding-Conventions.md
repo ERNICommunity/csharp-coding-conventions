@@ -78,7 +78,7 @@ private static readonly myLock = new Object();
 
 Declaration of types, type memebers (eg fields, properties, methods), parameters, and local variables can have several keywords. Follow these rules in declarations:
 
-1. Always specify the visibility, even if it's the default (i.e. `private string _foo`  not  `string _foo`).
+1. Always specify the visibility, even if it's the default (i.e. `private string foo`  not  `string foo`).
 2. Visibility should be the first modifier (i.e. `public abstract` not `abstract public`).
 3. When used on static fields, `readonly` should come after `static` (i.e. `static readonly` not `readonly static`).
 4. Members of enums are sorted by value.
