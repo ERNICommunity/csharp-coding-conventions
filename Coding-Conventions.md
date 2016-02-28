@@ -78,6 +78,20 @@ Declaration of types, type memebers (eg fields, properties, methods), parameters
 1. Always specify the visibility, even if it's the default (i.e. `private string _foo`  not  `string _foo`).
 2. Visibility should be the first modifier (i.e. `public abstract` not `abstract public`).
 3. When used on static fields, `readonly` should come after `static` (i.e. `static readonly` not `readonly static`).
+4. Members of enums are sorted by value.
+
+Order type members in following order inside file:
+
+1. Fields
+2. Properties
+3. Events
+4. Methods
+5. Inner Types
+
+There are exceptions to this rule, if members are strongly related to each other. For example:
+- Properties and value storage fields.
+- Depencency properties and related .NET properties.
+- Events and related `protected virtual` methods.
 
 ## References
 1. Use `nameof(...)` instead of `"..."` whenever possible and relevant.
