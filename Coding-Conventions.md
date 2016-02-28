@@ -14,6 +14,9 @@ Change on one line should not require changing other lines.
 ## No dogma dogma
 Every principle and every rule can be broken when there is a good reason for it **and** that reason is well documented.
 
+## Maintenability
+No matter which particular coding style is, once it is selected, it should be kept throughout the same project. Rule violations shall be treated as errors. Suppressed rules shall have a meanigful justification.
+
 # Conventions
 
 ## Indent style
