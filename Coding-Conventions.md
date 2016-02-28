@@ -68,6 +68,9 @@ private static readonly myLock = new Object();
 
 To distinguish between local and member variables use ```csharp this.```
 
+## Class Organization
+A class should always have the same structure. public static constants, if provided, should stand on the first place, then the private static variables followed by the private instance variables. The public functions should come after the list of variables. The private utilities which are called out of a public function should stand immediately behind the public function as the step-down rule instructs.
+
 ## Regions
 Do not use `#region` blocks. Regions are made for hiding the code. Our code deserves not to be hidden, we are proud of it.
 
