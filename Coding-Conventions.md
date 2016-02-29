@@ -56,7 +56,7 @@ Avoid more than one empty line at any time. For example, do not have two blank l
 Avoid spurious free spaces. For example avoid `if (someVar == 0)...`, where the dots mark the spurious free spaces. Consider enabling "View White Space (Ctrl+E, S)" if using Visual Studio, to aid detection.
 
 ## Naming conventions
-We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx). Since Microsoft Naming Guidelines are not very precise with nameing rules for constansts and private fields, we mention them separately.
+We follow Microsoft [Naming Guidelines](https://msdn.microsoft.com/en-us/library/ms229002.aspx). Since Microsoft Naming Guidelines are not very precise with naming rules for constansts and private fields, we mention them separately.
 
 ### Constants
 Constant names should follow Pascal casing irrespective of access modifier.
@@ -85,32 +85,32 @@ Declaration of types, type memebers (eg fields, properties, methods), parameters
 3. When used on static fields, `readonly` should come after `static` (i.e. `static readonly` not `readonly static`).
 4. Members of enums are sorted by value.
 
-Order type members in following order inside file:
-
-1. Fields
-2. Properties
-3. Events
-4. Methods
-5. Inner Types
-
-There are exceptions to this rule, if members are strongly related to each other. For example:
-- Properties and value storage fields.
-- Depencency properties and related .NET properties.
-- Events and related `protected virtual` methods.
-
 ## References
 1. Use `nameof(...)` instead of `"..."` whenever possible and relevant.
-2. Use `this.` whenever possible.
+2. Use `this.` whenever possible to distinguish between local and member variables use.
 3. Use `var` keyword instead of specific type whenever possible.
 4. Use language keywords instead of BCL types (i.e. `int, string, float` instead of `Int32, String, Single`, etc) for both type references as well as method calls (i.e. `int.Parse` instead of `Int32.Parse`).
 
 ## Namespaces
 Namespace imports should be specified at the top of the file, outside of `namespace` declarations and should be sorted alphabetically, but `System` namespaces must be before any other namespaces.
 
-To distinguish between local and member variables use ```csharp this.```
-
 ## Class Organization
-A class should always have the same structure. public static constants, if provided, should stand on the first place, then the private static variables followed by the private instance variables. The public functions should come after the list of variables. The private utilities which are called out of a public function should stand immediately behind the public function as the step-down rule instructs.
+Order type members in following order inside file:
+
+1. Constants
+2. Fields
+3. Properties
+4. Events
+5. Methods
+6. Inner Types
+
+Type members of the same kind should be sorted by visibility, at first public, then protected and then private members.
+
+There are exceptions to this rule, if members are strongly related to each other. For example:
+- Properties and value storage fields.
+- Depencency properties and related .NET properties.
+- Events and related `protected virtual` methods.
+- The private utilities which are called out of a public function should stand immediately behind the public function as the step-down rule instructs.
 
 ## Regions
 Do not use `#region` blocks. Regions are made for hiding the code. Our code deserves not to be hidden, we are proud of it.
