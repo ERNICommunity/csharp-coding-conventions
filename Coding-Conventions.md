@@ -1,5 +1,5 @@
 # About
-This document describes C# coding conventions we are using in ERNI Service Delivery Centers for solution projects.
+This document describes C# Coding Conventions we are using in ERNI Service Delivery Centers for solution projects.
 
 This work is heavily inspired by [Steve McConnell's Code Complete](http://www.stevemcconnell.com/cc.htm), [Robert C. Martin's Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882).
 
@@ -51,6 +51,7 @@ using (var xtr = new XmlTextReader(sr))
 ```
 
 ### Spaces
+Separate elements by blank line.
 Avoid more than one empty line at any time. For example, do not have two blank lines between members of a type.
 
 Avoid spurious free spaces. For example avoid `if (someVar == 0)...`, where the dots mark the spurious free spaces. Consider enabling "View White Space (Ctrl+E, S)" if using Visual Studio, to aid detection.
@@ -67,7 +68,7 @@ public const double Pi = 3.14;
 ```
 
 ### Private  fields
-Private field should begin with lower case. This apply for static fields as well. Private fields should not start with underscore or any other prefix.
+Private field should begin with lower case. This apply for static fields as well. Private fields start with underscore prefix.
 
 ```csharp
 private int x;

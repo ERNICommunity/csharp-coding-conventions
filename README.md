@@ -1,9 +1,9 @@
 # ERNI SDC C# Coding Conventions
 
  * Read our coding conventions [here](./Coding-Conventions.md)
- * Download StyleCop rule set file (todo)
- * Download Code Analysis rule set file (todo)
- * Download Resharper settings file (todo)
+ * Download StyleCop rule set file [here](./ERNI.Settings.StyleCop)
+ * Download Code Analysis rule set file [here](./ERNI.CodeAnalysis.ruleset)
+ * Download Resharper settings file [here](./ERNI.Resharper10.sln.DotSettings)
  
 ## Contribution
 
