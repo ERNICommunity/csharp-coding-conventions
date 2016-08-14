@@ -21,8 +21,8 @@ No matter which particular coding style is, once it is selected, it should be ke
 
 ## Indent style
 
-### Tabs
-Use tabs for indentation. Do not use spaces. Recommended tab size is 4, but always format code in a way that is compatible with arbitrary tab size.
+### Spaces
+Use spaces for indentation. 
 
 ### { Curly Braces } 
 We are using [Allman style](https://en.wikipedia.org/wiki/Indent_style#Allman_style) of bracket placement.
@@ -71,8 +71,8 @@ public const double Pi = 3.14;
 Private field should begin with lower case. This apply for static fields as well. Private fields start with underscore prefix.
 
 ```csharp
-private int x;
-private static readonly myLock = new Object();
+private int _x;
+private static readonly _myLock = new Object();
 ```
 
 To distinguish between local and member variables use ```this.```
