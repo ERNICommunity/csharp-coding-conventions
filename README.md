@@ -1,5 +1,7 @@
 # ERNI SDC C# Coding Conventions
 
+:warning: **REPOSITORY NOT ACTIVE SINCE 2017 Dependabot alerts in git security settings disabled**
+
  * Read our coding conventions [here](./Coding-Conventions.md)
  * Download StyleCop rule set file [here](./Settings.StyleCop)
  * Download Code Analysis rule set file [here](./ERNI.CodeAnalysis.ruleset)
